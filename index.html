@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="curved" id="curved"></div>
+        <div class="form-wrapper login">
+        <form action="">
+            <h2>Log In</h2>
+            <div class="input-box">
+                <input type="text" required>
+                <label> Username </label>
+            </div>
+            <div class="input-box">
+                <input type="text" required>
+                <label> Password </label>
+            </div>
+            <div class="forgot-pass">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Log In</button>
+            <div class="sign-link"><a href="#" onclick="return activeSignUp()">Sign Up</a>
+                <p>Don't have an account? </p>
+            </div>
+            <div class="social-platform">
+                <p>Or sign in with</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+        </form></div>
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label> Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label> Password </label>
+                </div>
+               
+                <button type="submit">Sign Up</button>
+                <div class="sign-link"><a href="#" onclick="return activeLogIn()">Log In</a>
+                    <p>Already have an account? </p>
+                </div>
+              </form>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

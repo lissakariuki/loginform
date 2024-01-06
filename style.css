@@ -1,0 +1,222 @@
+cd*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1691686280350-18c0a2cad41a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8TzN3QmM1OXp6Zjh8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:(rgb(165, 180, 201));
+}
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 50px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+}
+/*.wrapper .activeSignUp .form-wrapper .sign-up {
+    animation: wrapperSignUpshowJellyAnimate Is ease forwards;
+    animation-delay: 1.2s;
+}
+.wrapper .activeSignUp .form-wrapper .login {
+    animation: hideJellyAnimate Is ease forwards;
+}
+.wrapper .activeLogIn .form-wrapper .login {
+    animation: hideJellyAnimate Is ease forwards;
+    animation-delay: 1.2s;
+    transform: scale(0, 0);
+}
+.wrapper .form-wrapper .sign-up {
+    position: absolute;
+    top:0;
+    left:0;
+    transform: scale(0, 0);
+}
+.wrapper .activeSignUp .form-wrapper .sign-up {
+    animation: showJellyAnimate Is ease forwards;
+    animation-delay: 1.2s;
+}
+.wrapper .activeLogIn .form-wrapper .sign-up {
+    animation: hideJellyAnimate Is ease forwards;
+    animation-delay: 1.2s;
+}
+@keyframes hideJellyAnimate {
+    0%{
+        transform: scale(1,1);
+    }
+    25%{
+        transform: scale(.9, 1.1);
+    }
+    50%{
+        transform: scale(1.1, .9);
+    }
+    75%{
+        transform: scale(.95, 1.05);
+    }
+    100%{
+        transform: scale(0,0);
+    }
+}
+@keyframes showJellyAnimate {
+    0%{
+        transform: scale(0,0);
+    }
+    25%{
+        transform: scale(.95, 1.05);
+    }
+    50%{
+        transform: scale(1.1, .9);
+    }
+    75%{
+        transform: scale(.9, 1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes wrapperSignUpshowJellyAnimate {
+    0%{
+        transform: scale(1,1);
+    }
+    25%{
+        transform: scale(.95, 1.05);
+    }
+    50%{
+        transform: scale(1.1, .9);
+    }
+    75%{
+        transform: scale(.9, 1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}*/
+h2{
+    font-size: 30px ;
+    color: rgba( 76,104,139,1);
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 320px;
+    margin:30px 0;
+    border-bottom: 2px black solid; 
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba( 76,104,139,1);
+    pointer-events: none;
+    transition: .5s;
+}
+ .input-box input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    font-size: 16px;
+    color: rgba( 76,104,139,1);
+ }
+.input-box input:focus~label,
+.input-box input:valid~label {
+ top: -5px;
+}
+.forgot-pass{
+    margin: -15px 0 15px 5px;
+}
+.forgot-pass a {
+    color:rgba( 20, 48, 84,1);
+    font-size: 14px;
+    text-decoration: none;
+}
+.forgot-pass a:hover {
+ text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: rgb(196, 218, 245);
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgba( 20, 48, 84,1);
+    font-weight: 500;
+}
+.sign-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+.sign-link p {
+    color:rgba( 20, 48, 84,1);
+}
+.sign-link p {
+    color:rgb(11, 61, 105);
+    text-decoration: none;
+    font-weight: 500;
+}
+.sign-link p a:hover {
+    text-decoration:underline;
+}
+.social-platform{
+    font-size: 14px;
+    color: rgba( 20, 48, 84,1);
+    text-align:center;
+}
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius:50%;
+    margin: 15px 6px 0;
+    text-align: center;
+    transition: .5s;
+}
+.social-icons a{
+    background: rgba(  5, 27, 56,1);
+}
+.social-icons a:hover {
+    color: rgba(  5, 27, 56,1);
+    font-size: 14px;
+    line-height: 35px;
+    transition: .5s;
+}
+.social-icons a:hover i{
+    color: rgba(  5, 27, 56,1);
+}
+.curved{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 43, 73,112,1);
+    z-index: -2;
+    clip-path: circle(98% at 0 0);
+}
